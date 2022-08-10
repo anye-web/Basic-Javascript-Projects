@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+:root {
+  --primary-color: #0a51cc;
+  --secondary-color: #3474e6;
+  --light-color: #fff;
+  --dark-color: #001;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lora", serif;
+  font-size: 2rem;
+  color: var(--light-color);
+}
+
+.section__content {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--primary-color);
+}
+
+h1 {
+  font-size: 7rem;
+}
+
+.counter {
+  font-size: 9rem;
+  font-weight: bold;
+}
+
+.btn {
+  background-color: var(--light-color);
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-family: inherit;
+  border: none;
+  padding: 1.6rem 3rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-right: 2rem;
+}
+
+.btn:hover {
+  box-shadow: 0 0 0 0.8rem rgba(255, 255, 255, 0.5);
+}
