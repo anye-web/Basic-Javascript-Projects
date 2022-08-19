@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+:root {
+  --primary-color: #0a51cc;
+  --secondary-color: #3474e6;
+  --light-color: #fff;
+  --dark-color: #001;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lora", serif;
+  font-size: 2rem;
+  color: var(--light-color);
+}
+
+.section--content {
+  position: relative;
+
+  height: 100vh;
+  background-image: url(marek-piwnicki-B6G1ehYWq4I-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-color: #0a51cc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal--banner {
+  background-color: var(--secondary-color);
+  padding: 5rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+  padding-bottom: 2.5rem;
+}
+
+.btn {
+  border: none;
+  padding: 1.4rem 3.2rem;
+  color: var(--primary-color);
+  background-color: var(--light-color);
+  font-family: inherit;
+  font-weight: bold;
+  border-bottom: 4px solid transparent;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.btn:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.8rem rgba(255, 255, 255, 0.3);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+  background-color: var(--secondary-color);
+  padding: 8rem 2rem;
+  z-index: 100;
+  transition: all 0.5s ease;
+}
+.modal__icon {
+  color: red;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: all 0.8s ease;
+}
+
+.modal__icon:hover {
+  transform: rotate(360deg);
+}
+
+.overlay {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 17, 0.557);
+  top: 0;
+  left: 0;
+
+  transition: all 0.5s ease;
+}
+
+.hidden {
+  display: none;
+}
