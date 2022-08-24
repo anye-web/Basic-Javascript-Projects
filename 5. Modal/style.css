@@ -75,7 +75,7 @@ h1 {
   background-color: var(--secondary-color);
   padding: 8rem 2rem;
   z-index: 100;
-  transition: all 0.5s ease;
+  transition: all 0.8s linear;
 }
 .modal__icon {
   color: red;
@@ -99,7 +99,7 @@ h1 {
   top: 0;
   left: 0;
 
-  transition: all 0.5s ease;
+  transition: all 0.8s linear;
 }
 
 .hidden {

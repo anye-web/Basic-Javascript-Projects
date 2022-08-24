@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+:root {
+  --primary-color: #0a51cc;
+  --secondary-color: #3474e6;
+  --light-color: #fff;
+  --dark-color: #001;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lora", serif;
+  font-size: 2rem;
+  color: var(--light-color);
+  background-color: var(--primary-color);
+}
+
+.section {
+  margin: 10rem auto;
+  max-width: 80rem;
+}
+
+h1 {
+  font-size: 4.5rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.faq {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  padding: 2rem 3rem 0 3rem;
+  border-radius: 4px;
+  box-shadow: 0 0 2.4rem rgba(0, 0, 0, 0.4);
+  margin-bottom: 2rem;
+  transition: all 0.5s ease;
+}
+
+.faq__head {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #ddd;
+}
+.faq__head--heading {
+  font-weight: 600;
+}
+
+.faq__icon {
+  font-size: 3rem;
+  color: var(--secondary-color);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.faq__icon:hover {
+  transform: scale(1.2);
+  color: var(--primary-color);
+}
+
+.faq__body {
+  padding: 2rem;
+  transition: all 0.5s ease;
+}
+
+.faq__body--message {
+  font-size: 1.6rem;
+}
+
+/* Adding the text and hiding */
+
+.faq__body {
+  display: none;
+}
+
+.show--text .faq__body {
+  display: block;
+}
+
+.remove {
+  display: none;
+}
+.show--text .remove {
+  display: flex;
+}
+
+.show--text .add {
+  display: none;
+}
