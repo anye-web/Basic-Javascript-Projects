@@ -11,6 +11,7 @@
   --secondary-color: #3474e6;
   --light-color: #fff;
   --dark-color: #001;
+  --gray-clr: #2d2d2d;
 }
 html {
   font-size: 62.5%;
