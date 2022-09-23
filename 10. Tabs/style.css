@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+:root {
+  --primary-color: #0a51cc;
+  --secondary-color: #3474e6;
+  --light-color: #fff;
+  --dark-color: #001;
+  --gray-clr: #2d2d2d;
+  --green-clr: #2ad482;
+  --greenshade-clr: #7fe5b4;
+
+  --transition-5s: all 0.5s ease;
+}
+html {
+  font-size: 62.5%;
+  /* scroll-behavior: smooth; */
+}
+
+body {
+  font-family: "Lora", serif;
+  font-size: 1.8rem;
+  color: var(--light-color);
+  background-color: var(--gray-clr);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--light-color);
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  border-radius: 2rem;
+}
+header {
+  text-align: center;
+  margin: 5rem 0;
+}
+header h1 {
+  color: var(--green-clr);
+  font-size: 5rem;
+}
+
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 3rem 4rem;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.info-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  width: 100%;
+  border: none;
+  padding: 1.2rem 4rem;
+  font-size: 2rem;
+  font-family: inherit;
+  background-color: var(--green-clr);
+  color: var(--light-color);
+  cursor: pointer;
+  transition: var(--transition-5s);
+}
+.btn:hover {
+  background-color: var(--greenshade-clr);
+}
+.active.btn {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+.info-contents {
+  padding: 3rem 2rem;
+  background-color: var(--light-color);
+  color: var(--gray-clr);
+}
+
+.content h4 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.content {
+  display: none;
+}
+
+.content.active {
+  display: block;
+}
