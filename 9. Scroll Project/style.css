@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+:root {
+  --primary-color: #0a51cc;
+  --secondary-color: #3474e6;
+  --light-color: #fff;
+  --dark-color: #001;
+  --gray-clr: #2d2d2d;
+  --green-clr: #2ad482;
+
+  --transition-5s: all 0.5s ease;
+}
+html {
+  font-size: 62.5%;
+  /* scroll-behavior: smooth; */
+}
+
+body {
+  font-family: "Lora", serif;
+  font-size: 1.8rem;
+  color: var(--light-color);
+  background-color: var(--gray-clr);
+}
+
+a {
+  color: var(--light-color);
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+.header {
+  height: 100vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(45, 45, 45, 0.75),
+      rgba(45, 45, 45, 0.75)
+    ),
+    url(./gallery-5.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#navbar {
+  padding: 0 4rem;
+  width: 93.8%;
+  height: 12vh;
+
+  z-index: 9999;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sticky-nav {
+  position: fixed;
+  background-color: var(--gray-clr);
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-toggle {
+  display: none;
+  font-size: 3.5rem;
+  background-color: transparent;
+  color: var(--light-color);
+  padding: 0.5rem 1rem;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: var(--transition-5s);
+}
+
+.nav-toggle:hover {
+  color: var(--green-clr);
+  border-color: var(--green-clr);
+}
+.logo {
+  font-size: 5rem;
+  color: var(--green-clr);
+}
+.links {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.scroll-link {
+  text-transform: capitalize;
+  color: var(--light-color);
+  transition: var(--transition-5s);
+}
+
+.scroll-link:hover {
+  color: var(--green-clr);
+}
+
+@media (max-width: 56.25em) {
+  .nav-header {
+    width: 100%;
+  }
+  #navbar,
+  .links-containers {
+    background: var(--gray-clr);
+  }
+  .nav-toggle {
+    display: block;
+  }
+
+  .links-containers {
+    /* display: none; */
+    position: absolute;
+    top: 12vh;
+    left: 0;
+    width: 0%;
+    padding: 2rem 0 2rem 4rem;
+
+    /* transform: translateX(-100%); */
+    visibility: hidden;
+    opacity: 0;
+    transition: var(--transition-5s);
+  }
+  .show .links-containers {
+    /* transform: translateX(0); */
+    visibility: visible;
+    width: 100%;
+    opacity: 1;
+  }
+  .links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+.banner {
+  height: calc(100vh - 12vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h2 {
+  font-size: 6rem;
+  margin-bottom: 2rem;
+}
+.btn {
+  padding: 1.2rem 3rem;
+  text-transform: capitalize;
+  font-size: 2rem;
+  color: var(--light-color);
+  border: 2px solid var(--light-color);
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+  transition: var(--transition-5s);
+}
+.btn:hover {
+  color: var(--green-clr);
+  border-color: var(--green-clr);
+}
+
+.content p {
+  margin-bottom: 4rem;
+}
+
+section {
+  height: 200vh;
+}
+
+.section-about {
+  background-color: var(--primary-color);
+  color: var(--green-clr);
+}
+.section-services {
+  background-color: var(--green-clr);
+  color: var(--light-color);
+}
+.section-about {
+  background-color: var(--secondary-color);
+  color: var(--green-clr);
+}
+.section-tour {
+  background-color: var(--light-color);
+  color: var(--green-clr);
+}
+
+.footer {
+  background-color: var(--green-clr);
+  color: var(--light-color);
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.top-link {
+  background-color: var(--green-clr);
+  padding: 1rem;
+  border: 1px solid var(--light-color);
+  border-radius: 10px;
+
+  position: fixed;
+  top: 500px;
+  right: 2.4rem;
+  z-index: 1000;
+  animation: blink 1s ease infinite;
+
+  display: none;
+}
+.show-link {
+  display: flex;
+}
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0.8;
+    scale: 0.8;
+  }
+  50% {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.top-link:hover {
+  color: var(--light-color);
+}
+
+ion-icon {
+  --ionicon-stroke-width: 2.4rem;
+}
