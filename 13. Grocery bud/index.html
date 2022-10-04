@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocery Bud || Html || Css || Js</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="content">
+        <div class="alert">Hello</div>
+        <form class="form-container">
+          <h2 class="title">Grocery Bud</h2>
+          <div class="form-group">
+            <input
+              type="text "
+              name="form-input"
+              id="form-input"
+              placeholder="e.g. eggs"
+            />
+            <button type="submit" class="btn btn-full submit-btn">
+              Submit
+            </button>
+          </div>
+        </form>
+
+        <!-- List Item -->
+        <div class="grocery-container">
+          <!-- Items -->
+          <div class="grocery-list">
+            <!-- Was later set in Javascript -->
+            <!-- <article class="grocery-item">
+              <p class="text">Item</p>
+              <div class="btn-container">
+                <button class="btn btn-outline edit-btn">
+                  <ion-icon name="create-sharp"></ion-icon>
+                </button>
+                <button class="btn btn-outline delete-btn">
+                  <ion-icon name="trash-sharp"></ion-icon>
+                </button>
+              </div>
+            </article> -->
+          </div>
+          <!-- Clear Button -->
+          <button class="btn btn-outline btn-clear">Clear Items</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Script -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
